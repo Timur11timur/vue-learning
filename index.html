@@ -8,21 +8,50 @@
     <title>Document</title>
     <script src="https://unpkg.com/vue@3"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .is-loading {
+            color: transparent;
+            position: relative;
+        }
+        .is-loading:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -10px;
+            margin-left: -10px;
+            width: 20px;
+            height: 20px;
+            border: 5px solid #FFF;
+            border-bottom-color: transparent;
+            border-radius: 50%;
+            display: inline-block;
+            box-sizing: border-box;
+            animation: rotation 1s linear infinite;
+        }
+
+        @keyframes rotation {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
 <body class="h-full grid place-items-center">
     <div id="app">
-        <app-button>Submit</app-button>
+        <app-button type="primary">Primary</app-button>
+        <app-button type="secondary">Secondary</app-button>
+        <app-button type="muted">Muted</app-button>
+        <app-button :processing="true">Muted</app-button>
     </div>
 
     <script type="module">
-        import AppButton from "./js/components/AppButton.js";
+        import App from "./js/components/App.js";
 
-        let app = {
-            components: {
-                'app-button': AppButton
-            }
-        };
-        Vue.createApp(app).mount('#app');
+        Vue.createApp(App).mount('#app');
     </script>
 </body>
 </html>
