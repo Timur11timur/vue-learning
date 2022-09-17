@@ -10,19 +10,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="h-full grid place-items-center">
-    <div id="app">
-        <app-button>Submit</app-button>
-    </div>
+    <div id="app"></div>
 
     <script type="module">
-        import AppButton from "./js/components6/AppButton.js";
+        import App from "./js/components7/App.js";
 
-        let app = {
-            components: {
-                'app-button': AppButton
-            }
-        };
-        Vue.createApp(app).mount('#app');
+        Vue.createApp(App).mount('#app');
     </script>
 </body>
 </html>
