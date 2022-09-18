@@ -1,5 +1,8 @@
 # Vue 3
 
+## Run Server and Endpoint
+npm run start  
+
 ### CDN
 `<script src="https://unpkg.com/vue@3"></script>`
 
@@ -43,5 +46,5 @@ npm install json-server --save-dev
 ### Create data in db.json file
 touch db.json
 
-### Run server
+### Run server for Endpoint
 npx json-server db.json -p 3001
