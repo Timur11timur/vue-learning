@@ -50,3 +50,8 @@ touch db.json
 
 ### Run server for Endpoint
 npx json-server db.json -p 3001
+
+## Install Vue through Vite
+npm init vue@latest
+
+
