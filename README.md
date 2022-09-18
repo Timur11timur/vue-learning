@@ -11,7 +11,8 @@ npx serve
 
 ### Shortening
 v-bind:class = :class  
-v-on:click = @click
+v-on:click = @click  
+v-slot:footer = #footer  
 
 ### Directives
 v-for - loop   
@@ -20,6 +21,7 @@ v-else
 v-else-if   
 v-show - not display  
 v-model   
+v-text  
 
 ### Component parts
 components:  
