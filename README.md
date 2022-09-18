@@ -36,3 +36,12 @@ beforeUpdate
 updated  
 beforeDestroy  
 destroyed  
+
+## Set up server for API
+npm install json-server --save-dev
+
+### Create data in db.json file
+touch db.json
+
+### Run server
+npx json-server db.json -p 3001
