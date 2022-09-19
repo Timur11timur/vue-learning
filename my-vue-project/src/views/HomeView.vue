@@ -1,9 +1,15 @@
-<script setup>
-import TheWelcome from "../components/TheWelcome.vue";
+<script>
+import flash from "@/mixins/flash";
+
+export default {
+  mixins: [flash]
+}
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <div>
+    <p>
+      <button @click="flash('It Works!')">Click Me Here</button>
+    </p>
+  </div>
 </template>

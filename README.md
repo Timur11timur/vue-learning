@@ -31,6 +31,7 @@ computed:
 watch:  
 methods:  
 templates:  
+mixins: []  
 
 ### Hooks
 beforeCreate  
