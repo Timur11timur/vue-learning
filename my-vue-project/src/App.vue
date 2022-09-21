@@ -1,7 +1,11 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "@/components/HelloWorld.vue";
+import Modal from "@/components/Modal.vue";
 import { data } from '@/stores/dataStore.js'
+import { ref } from 'vue'
+
+let showModal = ref(false);
 </script>
 
 <template>
@@ -12,6 +16,7 @@ import { data } from '@/stores/dataStore.js'
       src="@/assets/logo.svg"
       width="125"
       height="125"
+      @click="showModal = true"
     />
 
     <div class="wrapper">
@@ -28,6 +33,10 @@ import { data } from '@/stores/dataStore.js'
   </header>
 
   <RouterView />
+  <Modal :show="showModal" @close="showModal = false">
+    <template #header>Header</template>
+    Body
+  </Modal>
 </template>
 
 <style scoped>
