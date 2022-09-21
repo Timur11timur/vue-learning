@@ -9,6 +9,7 @@ npm run start
 ### Boot a Node JS server
 npx serve
 
+## Option API  
 ### Shortening
 v-bind:class = :class  
 v-on:click = @click  
@@ -54,5 +55,9 @@ npx json-server db.json -p 3001
 
 ## Install Vue through Vite
 npm init vue@latest
+
+## Composition API  
+
+provide -> inject - pass variable through several layers to children component  
 
 
