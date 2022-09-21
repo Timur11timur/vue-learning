@@ -7,7 +7,7 @@ npm run start
 `<script src="https://unpkg.com/vue@3"></script>`
 
 ### Boot a Node JS server
-npx serve
+`npx serve`
 
 ## Option API  
 ### Shortening
@@ -45,19 +45,26 @@ beforeDestroy
 destroyed  
 
 ## Set up server for API
-npm install json-server --save-dev
+`npm install json-server --save-dev`
 
 ### Create data in db.json file
 touch db.json
 
 ### Run server for Endpoint
-npx json-server db.json -p 3001
+`npx json-server db.json -p 3001`
 
 ## Install Vue through Vite
-npm init vue@latest
+`npm init vue@latest`
 
 ## Composition API  
 
 provide -> inject - pass variable through several layers to children component  
+
+## Pinia
+`npm install pinia`
+
+state() - variables
+actions: - methods influence on variables
+getters: - additional manipulations with variables
 
 
