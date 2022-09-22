@@ -16,6 +16,7 @@ let showModal = ref(false);
       src="@/assets/logo.svg"
       width="125"
       height="125"
+      title="Click Me"
       @click="showModal = true"
     />
 
@@ -43,6 +44,10 @@ let showModal = ref(false);
 header {
   line-height: 1.5;
   max-height: 100vh;
+}
+
+header {
+  cursor: pointer;
 }
 
 .logo {
