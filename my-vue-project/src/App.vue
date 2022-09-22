@@ -34,10 +34,12 @@ let showModal = ref(false);
   </header>
 
   <RouterView />
-  <Modal :show="showModal" @close="showModal = false">
-    <template #header>Header</template>
-    Body
-  </Modal>
+  <Teleport to="body">
+    <Modal :show="showModal" @close="showModal = false">
+      <template #header>Header</template>
+      Body
+    </Modal>
+  </Teleport>
 </template>
 
 <style scoped>
